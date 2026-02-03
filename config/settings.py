@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-ti(n_1*w78b(4idit_a$a5nnxet0%3g(5ho(0t5gd6a0l01^!#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['vazinho.pythonanywhere.com', '127.0.0.1']
+ALLOWED_HOSTS = ['vazinho.pythonanywhere.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -117,6 +117,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = 'static/'
+# Caminho físico no computador onde os ficheiros ficam guardados
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # URL que usamos no browser para aceder às imagens
 MEDIA_URL = '/media/'
