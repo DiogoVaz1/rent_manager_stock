@@ -78,5 +78,5 @@ O projeto está alojado no **PythonAnywhere**.
 
 ## 🔒 Licença
 
-Proprietário: **[Nome da Tua Empresa / Teu Nome]**
+Proprietário: **Diogo Vaz**
 *Todos os direitos reservados. Uso não autorizado é proibido.*
