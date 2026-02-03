@@ -1,4 +1,5 @@
 from django.contrib import admin
+from django.shortcuts import redirect
 from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
@@ -8,6 +9,9 @@ from django.conf.urls.static import static
 from core.views import comprovativo_aluguer 
 
 urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', lambda request: redirect('admin/')),
+
     path('admin/', admin.site.urls),
     
     # NOVA ROTA: ex: /aluguer/1/imprimir/
